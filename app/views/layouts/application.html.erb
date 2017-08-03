@@ -9,6 +9,26 @@
   </head>
 
   <body>
+   <div id="sidebar">
+   	<div id="logo">
+   		<%= link_to root_path %>
+   		<%= image_tag "logo.png" %>
+   		
+   	</div>
+   	<ul>
+   		<li class="category">Website</li>
+   		<li><%= link_to "Blog", root_path %></li>
+   		<li>About</li>
+   	</ul>
+   	<ul>
+   		<li class="category">Social</li>
+   		<li><a href="http://twitter.com">Twitter</a></li>
+   		<li><a href="http://twitter.com">Instagram</a></li>
+   		<li><a href="http://twitter.com">Github</a></li>
+   		<li><a href="mailto:email@ddavies.co.uk">Email</a></li>
+   	</ul>
+   </div>
+   
     <%= yield %>
   </body>
 </html>
