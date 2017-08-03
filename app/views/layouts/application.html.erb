@@ -41,7 +41,13 @@
    			<button class="button">Log Out</button>
    		</div>
    	</div>
-   </div>
-    <%= yield %>
+
+			<% flash.each do |name, msg| %>
+				<%= content_tag(:div, msg, class: "alert") %>
+			<% end %>
+
+			<%= yield %>
+			
+		</div><!-- /.main_content -->
   </body>
 </html>
